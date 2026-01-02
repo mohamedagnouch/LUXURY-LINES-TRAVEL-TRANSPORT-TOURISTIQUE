@@ -19,7 +19,7 @@ export default function Footer() {
               </div>
             </div>
             <p className="text-sm text-gray-300 leading-relaxed">
-              L&apos;agence de transport touristique <strong className="text-white">Luxury Lines Travel</strong> offre des services de transport de luxe, location voiture longue durée et taxi aéroport, répondant à toutes les exigences de manière sûre et fiable.
+              L&apos;agence de transport touristique <strong className="text-white">Luxury Lines Travel</strong> offre des services de transport de luxe, et taxi aéroport, répondant à toutes les exigences de manière sûre et fiable.
             </p>
           </div>
 
@@ -99,7 +99,7 @@ export default function Footer() {
                   >
                     +212 7 80 89 48 66
                   </a>
-                  <p className="text-gray-400 text-sm mt-1">Lundi - Dimanche, 8h00 - 19h00</p>
+                  <p className="text-gray-400 text-sm mt-1">7J/7 24/24</p>
                 </div>
               </div>
 
