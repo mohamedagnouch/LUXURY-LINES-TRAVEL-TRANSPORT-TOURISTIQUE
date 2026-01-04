@@ -5,7 +5,7 @@ import WhatsAppButton from "@/components/WhatsAppButton";
 import StructuredData from "@/components/StructuredData";
 
 export default function Home() {
-  const whatsappNumber = "212708894866";
+  const whatsappNumber = "212780894866";
   const whatsappMessage = encodeURIComponent(
     "Bonjour, je souhaite obtenir plus d'informations sur vos services."
   );
@@ -482,7 +482,7 @@ export default function Home() {
               Réserver sur WhatsApp
             </a>
             <a
-              href="tel:+212708894866"
+              href="tel:+212780894866"
               className="inline-flex items-center justify-center px-8 py-4 bg-black text-white font-semibold rounded-lg hover:bg-gray-900 transition-colors shadow-lg"
             >
               <svg className="w-6 h-6 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">

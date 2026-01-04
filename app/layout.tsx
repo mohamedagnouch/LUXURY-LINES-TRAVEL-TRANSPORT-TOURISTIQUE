@@ -54,11 +54,16 @@ export const metadata: Metadata = {
     ],
   },
 
+  icons: {
+    icon: "/logo.jpg",
+    shortcut: "/logo.jpg",
+    apple: "/logo.jpg",
+  },
+
   twitter: {
     card: "summary_large_image",
     title: "Luxury Lines Travel - Transport Touristique Marrakech",
-    description:
-      "Service de transport touristique de luxe à Marrakech. Transferts aéroport, excursions, circuits désert.",
+    description: "Luxury Lines Travel - Agence de transport touristique de luxe à Marrakech. Transferts aéroport, excursions et circuits privés au Maroc.",
     images: ["/og-image.jpg"],
     creator: "@luxurylinestravel",
   },

@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { usePathname } from "next/navigation";
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -58,17 +59,17 @@ export default function Header() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-2 sm:py-4">
           <div className="flex flex-col lg:flex-row items-center justify-center lg:justify-between gap-3 sm:gap-4">
             {/* Logo */}
-            <Link href="/" className="flex items-center gap-2 sm:gap-3 hover:opacity-90 transition-all group">
-              <div className="relative">
-                <div className="text-3xl sm:text-4xl font-bold tracking-tight bg-gradient-to-br from-yellow-600 to-yellow-700 bg-clip-text text-transparent group-hover:from-yellow-700 group-hover:to-yellow-800 transition-all">
-                  <span>L</span>
-                  <span>L</span>
-                  <span>T</span>
-                </div>
-                <div className="absolute inset-0 bg-gradient-to-br from-yellow-400/20 to-yellow-600/20 blur-xl opacity-0 group-hover:opacity-100 transition-opacity"></div>
+            <Link href="/" className="flex items-center gap-3 hover:opacity-90 transition-all group">
+              <div className="relative w-16 h-16 sm:w-20 sm:h-20">
+                <Image
+                  src="/logo.jpg"
+                  alt="Luxury Lines Travel Logo"
+                  fill
+                  className="object-contain rounded-lg"
+                />
               </div>
               <div className="flex flex-col">
-                <h1 className="text-sm sm:text-lg font-bold text-gray-900 tracking-wide">LUXURY LINES TRAVEL</h1>
+                <h1 className="text-sm sm:text-lg font-bold text-gray-900 tracking-wide leading-tight">LUXURY LINES TRAVEL</h1>
                 <p className="text-[9px] sm:text-[11px] text-gray-600 font-medium tracking-wider">TRANSPORT TOURISTIQUE</p>
               </div>
             </Link>

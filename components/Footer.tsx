@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Footer() {
   return (
@@ -8,10 +9,13 @@ export default function Footer() {
           {/* Company Info */}
           <div className="space-y-4">
             <div className="flex items-center gap-4 mb-6">
-              <div className="text-4xl font-bold bg-gradient-to-br from-yellow-600 to-yellow-700 bg-clip-text text-transparent">
-                <span>L</span>
-                <span>L</span>
-                <span>T</span>
+              <div className="relative w-16 h-16">
+                <Image
+                  src="/logo.jpg"
+                  alt="Luxury Lines Travel Logo"
+                  fill
+                  className="object-contain rounded-lg"
+                />
               </div>
               <div className="flex flex-col">
                 <h3 className="text-lg font-bold text-white">LUXURY LINES TRAVEL</h3>
@@ -64,7 +68,7 @@ export default function Footer() {
               </li>
               <li>
                 <a
-                  href="https://wa.me/212708894866?text=Bonjour%2C%20je%20souhaite%20obtenir%20plus%20d%27informations%20sur%20vos%20services%20de%20transport%20touristique."
+                  href="https://wa.me/212780894866?text=Bonjour%2C%20je%20souhaite%20obtenir%20plus%20d%27informations%20sur%20vos%20services%20de%20transport%20touristique."
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-gray-300 hover:text-yellow-400 transition-colors duration-200 flex items-center gap-2 group"
@@ -94,10 +98,10 @@ export default function Footer() {
                 </div>
                 <div>
                   <a
-                    href="tel:+212708894866"
+                    href="tel:+212780894866"
                     className="text-white hover:text-yellow-400 transition-colors duration-200 font-semibold block"
                   >
-                    +212 7 08 89 48 66
+                    +212 7 80 89 48 66
                   </a>
                   <p className="text-gray-400 text-sm mt-1">7J/7 24/24</p>
                 </div>
