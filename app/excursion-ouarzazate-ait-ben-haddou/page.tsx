@@ -167,7 +167,7 @@ export default function ExcursionOuarzazateAitBenHaddou() {
 
                 <div className="mt-4 flex flex-wrap gap-3 items-center">
                   <a
-                    href="https://wa.me/1234567890"
+                    href="https://wa.me/212708894866"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-flex items-center justify-center px-6 py-3 rounded-full bg-[#cc6600] text-white text-sm font-semibold shadow-md hover:bg-[#b35600] transition-colors"

@@ -12,7 +12,7 @@ export const metadata: Metadata = {
 };
 
 export default function TaxiAeroport() {
-  const whatsappNumber = "212780894866";
+  const whatsappNumber = "212708894866";
   const whatsappMessage = encodeURIComponent(
     "Bonjour, je souhaite réserver un transfert aéroport."
   );
@@ -105,9 +105,14 @@ export default function TaxiAeroport() {
             <p className="text-base sm:text-lg text-center md:text-left">
               Tarifs Transfert Aéroport Marrakech Moins Cher faites votre réservation en ligne dès aujourd'hui et profitez de votre prochain voyage dans le luxe
             </p>
-            <button className="bg-yellow-600 hover:bg-yellow-700 text-white font-semibold px-6 py-3 rounded-lg transition-colors whitespace-nowrap">
+            <a
+              href={whatsappUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-yellow-600 hover:bg-yellow-700 text-white font-semibold px-6 py-3 rounded-lg transition-colors whitespace-nowrap text-center"
+            >
               Contactez-nous &gt;
-            </button>
+            </a>
           </div>
         </div>
       </section>

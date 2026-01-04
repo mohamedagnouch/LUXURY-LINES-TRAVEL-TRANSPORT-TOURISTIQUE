@@ -12,8 +12,8 @@ Vercel est la plateforme la plus simple pour déployer Next.js.
 4. **Configuration des Variables d'Environnement** :
    Dans l'onglet "Settings > Environment Variables", ajoutez les variables suivantes extraites de `.env.example` :
    - `NEXT_PUBLIC_SITE_URL` : `https://luxurylinestravel.com` (ou votre domaine final)
-   - `NEXT_PUBLIC_WHATSAPP_NUMBER` : `212780894866`
-   - `NEXT_PUBLIC_PHONE_NUMBER` : `+212780894866`
+   - `NEXT_PUBLIC_WHATSAPP_NUMBER` : `212708894866`
+   - `NEXT_PUBLIC_PHONE_NUMBER` : `0708894866`
    - `NEXT_PUBLIC_EMAIL` : `infos@luxurylinestravel.com`
 5. Cliquez sur "Deploy".
 

@@ -68,7 +68,7 @@ export default function Footer() {
               </li>
               <li>
                 <a
-                  href="https://wa.me/212780894866?text=Bonjour%2C%20je%20souhaite%20obtenir%20plus%20d%27informations%20sur%20vos%20services%20de%20transport%20touristique."
+                  href="https://wa.me/212708894866?text=Bonjour%2C%20je%20souhaite%20obtenir%20plus%20d%27informations%20sur%20vos%20services%20de%20transport%20touristique."
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-gray-300 hover:text-yellow-400 transition-colors duration-200 flex items-center gap-2 group"
@@ -98,10 +98,10 @@ export default function Footer() {
                 </div>
                 <div>
                   <a
-                    href="tel:+212780894866"
+                    href="tel:+212708894866"
                     className="text-white hover:text-yellow-400 transition-colors duration-200 font-semibold block"
                   >
-                    +212 7 80 89 48 66
+                    +212 708-894866
                   </a>
                   <p className="text-gray-400 text-sm mt-1">7J/7 24/24</p>
                 </div>
