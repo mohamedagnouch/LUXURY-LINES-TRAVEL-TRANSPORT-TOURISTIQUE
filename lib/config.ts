@@ -11,10 +11,10 @@ export const siteConfig = {
 
     // Contact
     contact: {
-        phone: "+212780894866",
-        phoneDisplay: "+212 7 80 89 48 66",
+        phone: "+212708894866",
+        phoneDisplay: "+212 7 08 89 48 66",
         email: "infos@luxurylinestravel.com",
-        whatsapp: "212780894866",
+        whatsapp: "212708894866",
         address: "Marrakech, Maroc",
     },
 

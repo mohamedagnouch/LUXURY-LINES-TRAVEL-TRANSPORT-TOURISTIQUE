@@ -1,7 +1,7 @@
 "use client";
 
 export default function WhatsAppButton() {
-  const whatsappNumber = "212780894866"; // Format international sans +
+  const whatsappNumber = "212708894866"; // Format international sans +
   const whatsappMessage = encodeURIComponent(
     "Bonjour, je souhaite obtenir plus d'informations sur vos services de transport touristique."
   );

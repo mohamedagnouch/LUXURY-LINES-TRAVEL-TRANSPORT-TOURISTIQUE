@@ -9,7 +9,7 @@ export default function Header() {
   const [excursionOpen, setExcursionOpen] = useState(false);
   const [circuitsOpen, setCircuitsOpen] = useState(false);
   const pathname = usePathname();
-  const whatsappNumber = "212780894866";
+  const whatsappNumber = "212708894866";
   const whatsappMessage = encodeURIComponent(
     "Bonjour, je souhaite obtenir plus d'informations sur vos services de transport touristique."
   );
@@ -29,13 +29,13 @@ export default function Header() {
             </p>
             <div className="flex items-center gap-3 sm:gap-6">
               <a
-                href="tel:+212780894866"
+                href="tel:+212708894866"
                 className="flex items-center gap-1.5 sm:gap-2 text-xs sm:text-sm font-medium text-gray-900 hover:text-yellow-600 transition-colors"
               >
                 <svg className="w-3.5 h-3.5 sm:w-4 sm:h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
                 </svg>
-                <span className="hidden xs:inline">+212 7 80 89 48 66</span>
+                <span className="hidden xs:inline">+212 7 08 89 48 66</span>
                 <span className="xs:hidden">Appel</span>
               </a>
               <a
