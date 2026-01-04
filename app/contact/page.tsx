@@ -1,38 +1,12 @@
 "use client";
 
-import { useState } from "react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { siteConfig } from "@/lib/config";
 
 export default function ContactPage() {
-    const [formData, setFormData] = useState({
-        name: "",
-        email: "",
-        phone: "",
-        subject: "Demande d'information",
-        message: "",
-    });
-
-    const [status, setStatus] = useState<"idle" | "loading" | "success" | "error">("idle");
-
-    const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
-        setFormData({ ...formData, [e.target.name]: e.target.value });
-    };
-
-    const handleSubmit = async (e: React.FormEvent) => {
-        e.preventDefault();
-        setStatus("loading");
-
-        // Simulation d'envoi (peut être remplacé par une API réelle)
-        setTimeout(() => {
-            setStatus("success");
-            setFormData({ name: "", email: "", phone: "", subject: "Demande d'information", message: "" });
-        }, 1500);
-    };
-
     return (
-        <div className="min-h-screen bg-white">
+        <div className="min-h-screen bg-white text-black">
             <Header />
 
             <main className="py-16 px-4 sm:px-6 lg:px-8">
@@ -44,13 +18,13 @@ export default function ContactPage() {
                         </p>
                     </div>
 
-                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                    <div className="max-w-3xl mx-auto space-y-12">
                         {/* Infos de contact */}
-                        <div className="space-y-8">
-                            <div className="bg-gray-50 p-8 rounded-2xl border border-gray-100">
-                                <h2 className="text-2xl font-bold text-gray-900 mb-6">Nos coordonnées</h2>
+                        <div className="bg-gray-50 p-8 sm:p-12 rounded-2xl border border-gray-100 shadow-sm">
+                            <h2 className="text-2xl font-bold text-gray-900 mb-8 text-center">Nos coordonnées</h2>
 
-                                <div className="space-y-6">
+                            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                                <div className="space-y-8">
                                     <div className="flex items-start gap-4">
                                         <div className="p-3 bg-yellow-100 rounded-lg text-yellow-700">
                                             <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -92,117 +66,30 @@ export default function ContactPage() {
                                         </div>
                                     </div>
                                 </div>
-                            </div>
 
-                            {/* Map Placeholder */}
-                            <div className="h-64 bg-gray-200 rounded-2xl overflow-hidden relative">
-                                <div className="absolute inset-0 flex items-center justify-center text-gray-500 italic">
-                                    Carte de Marrakech
+                                <div className="space-y-6">
+                                    <div className="p-6 bg-white rounded-xl border border-gray-100 shadow-sm">
+                                        <h3 className="font-bold text-gray-900 mb-2 font-mono">Disponibilité</h3>
+                                        <p className="text-gray-600 text-sm">7J/7 24/24</p>
+                                        <p className="text-gray-500 text-xs mt-2 italic">Nous sommes à votre service à tout moment pour vos transferts et réservations.</p>
+                                    </div>
+                                    <div className="p-6 bg-yellow-600 rounded-xl shadow-lg text-white">
+                                        <h3 className="font-bold mb-2">Réservation Rapide</h3>
+                                        <p className="text-sm opacity-90 mb-4">Contactez-nous directement sur WhatsApp pour une réponse instantanée.</p>
+                                        <a
+                                            href={`https://wa.me/${siteConfig.contact.whatsapp}`}
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                            className="inline-block w-full text-center py-2 bg-white text-yellow-700 font-bold rounded-lg hover:bg-gray-100 transition-colors"
+                                        >
+                                            WhatsApp
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
 
-                        {/* Formulaire */}
-                        <div className="bg-white p-8 rounded-2xl border border-gray-100 shadow-xl">
-                            <form onSubmit={handleSubmit} className="space-y-6">
-                                <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-                                    <div>
-                                        <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-1">Nom complet</label>
-                                        <input
-                                            type="text"
-                                            id="name"
-                                            name="name"
-                                            required
-                                            value={formData.name}
-                                            onChange={handleChange}
-                                            className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-yellow-500 focus:border-yellow-500 outline-none transition-all"
-                                            placeholder="Votre nom"
-                                        />
-                                    </div>
-                                    <div>
-                                        <label htmlFor="phone" className="block text-sm font-medium text-gray-700 mb-1">Téléphone</label>
-                                        <input
-                                            type="tel"
-                                            id="phone"
-                                            name="phone"
-                                            required
-                                            value={formData.phone}
-                                            onChange={handleChange}
-                                            className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-yellow-500 focus:border-yellow-500 outline-none transition-all"
-                                            placeholder="Votre numéro"
-                                        />
-                                    </div>
-                                </div>
 
-                                <div>
-                                    <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-1">Email</label>
-                                    <input
-                                        type="email"
-                                        id="email"
-                                        name="email"
-                                        required
-                                        value={formData.email}
-                                        onChange={handleChange}
-                                        className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-yellow-500 focus:border-yellow-500 outline-none transition-all"
-                                        placeholder="votre@email.com"
-                                    />
-                                </div>
-
-                                <div>
-                                    <label htmlFor="subject" className="block text-sm font-medium text-gray-700 mb-1">Objet</label>
-                                    <select
-                                        id="subject"
-                                        name="subject"
-                                        value={formData.subject}
-                                        onChange={handleChange}
-                                        className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-yellow-500 focus:border-yellow-500 outline-none transition-all"
-                                    >
-                                        <option>Demande d'information</option>
-                                        <option>Réservation Transfert</option>
-                                        <option>Réservation Excursion</option>
-                                        <option>Réservation Circuit</option>
-                                        <option>Autre</option>
-                                    </select>
-                                </div>
-
-                                <div>
-                                    <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-1">Message</label>
-                                    <textarea
-                                        id="message"
-                                        name="message"
-                                        required
-                                        rows={4}
-                                        value={formData.message}
-                                        onChange={handleChange}
-                                        className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-yellow-500 focus:border-yellow-500 outline-none transition-all resize-none"
-                                        placeholder="Comment pouvons-nous vous aider ?"
-                                    ></textarea>
-                                </div>
-
-                                <button
-                                    type="submit"
-                                    disabled={status === "loading"}
-                                    className={`w-full py-4 rounded-lg font-bold text-white transition-all shadow-lg ${status === "loading" ? "bg-gray-400 cursor-not-allowed" : "bg-yellow-600 hover:bg-yellow-700 active:scale-[0.98]"
-                                        }`}
-                                >
-                                    {status === "loading" ? (
-                                        <span className="flex items-center justify-center gap-2">
-                                            <svg className="animate-spin h-5 w-5 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
-                                                <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"></circle>
-                                                <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
-                                            </svg>
-                                            Envoi en cours...
-                                        </span>
-                                    ) : "Envoyer le message"}
-                                </button>
-
-                                {status === "success" && (
-                                    <div className="p-4 bg-green-50 text-green-700 rounded-lg border border-green-100 text-center">
-                                        Votre message a été envoyé avec succès ! Nous vous répondrons très prochainement.
-                                    </div>
-                                )}
-                            </form>
-                        </div>
                     </div>
                 </div>
             </main>

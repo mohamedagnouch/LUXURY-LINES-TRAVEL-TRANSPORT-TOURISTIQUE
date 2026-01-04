@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <url>
+    <loc>https://luxurylinestravel.com/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <url>
+    <loc>https://luxurylinestravel.com/taxi-aeroport</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Excursions -->
+  <url><loc>https://luxurylinestravel.com/excursion-vallee-ourika</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://luxurylinestravel.com/excursion-agafay</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://luxurylinestravel.com/excursion-3-vallees-marrakech</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://luxurylinestravel.com/excursion-imlil-vallee-atlas</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://luxurylinestravel.com/excursion-cascades-ouzoud</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://luxurylinestravel.com/excursion-casablanca</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://luxurylinestravel.com/excursion-ouarzazate-ait-ben-haddou</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://luxurylinestravel.com/excursion-essaouira</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://luxurylinestravel.com/excursion-agadir</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://luxurylinestravel.com/excursion-agafay-desert-marrakech</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+
+  <!-- Circuits -->
+  <url><loc>https://luxurylinestravel.com/circuit-4-jours-desert-merzouga</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://luxurylinestravel.com/circuit-4-jours-desert-merzouga-fes</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://luxurylinestravel.com/circuit-3-jours-marrakech-zagora</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+
+  <!-- Info -->
+  <url><loc>https://luxurylinestravel.com/contact</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://luxurylinestravel.com/mentions-legales</loc><changefreq>yearly</changefreq><priority>0.3</priority></url>
+  <url><loc>https://luxurylinestravel.com/politique-confidentialite</loc><changefreq>yearly</changefreq><priority>0.3</priority></url>
+
+</urlset>
