@@ -2,7 +2,7 @@ import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   /* config options here */
-   output: "export",
+  output: "export",
   // Configuration des images pour la production
   images: {
     formats: ["image/avif", "image/webp"],
